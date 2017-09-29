@@ -1,4 +1,4 @@
-# Cosmos-Clicker
+# Cosmos Clicker
 A clicker game made to explore the depths of space and beyond!
 
 The idea was given to me when I didn't know what project to start.

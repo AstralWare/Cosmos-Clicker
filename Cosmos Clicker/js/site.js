@@ -3,7 +3,7 @@ var Open1 = 0;
 var Open2 = 0;
 var Open3 = 0;
 
-function Load()
+function Loads()
 {
 	player = new Audio("music/loop.mp3");
 	player.volume = 0.4;

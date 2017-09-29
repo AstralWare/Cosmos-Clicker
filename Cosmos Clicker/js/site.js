@@ -3,6 +3,17 @@ var Open1 = 0;
 var Open2 = 0;
 var Open3 = 0;
 
+
+function Timer()
+{
+
+}
+
+function Update()
+{
+	
+}
+
 function Loads()
 {
 	player = new Audio("music/loop.mp3");
@@ -121,6 +132,5 @@ function Nav3()
 if ('addEventListener' in window) 
 {
 	window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-	document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 }
 

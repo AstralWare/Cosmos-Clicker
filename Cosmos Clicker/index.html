@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Cosmos Clicker (0)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="icon" type="image/png" href="images/Favicon.png"/>
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+	</head>
+
+	<body class="is-loading" onload="Load()">
+
+			<div id="mySidenav" class="sidenav">
+  				<a href="#">About</a>
+  				<a href="#">Services</a>
+  				<a href="#">Clients</a>
+  				<a href="#">Contact</a>
+			</div>
+
+			<div id="wrapper">
+
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/Click.png" alt="" style="width: 100px; height: 100px;"/></span>
+							<h1>0 Atoms</h1>
+							<p>Lets Conquer The Universe!</p>
+						</header>
+
+						<footer>
+							<ul class="icons">
+								<li><span onclick="openNav()"><img src="images/Upgrades.png" alt="Upgrades" style="cursor: pointer;width: 80px;height:80px;"/></span>
+							</ul>
+						</footer>
+					</section>
+
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; AstralWare Studios</li><li>Studio: <a href="http://AstralwareStudios.ml">Official Site</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+			<script>
+				var Open = 0;
+
+				function Load()
+				{
+					player = new Audio("music/Loop.mp3");
+					player.loop = true;
+					player.play();
+				}
+
+				function openNav()
+				{
+					if (Open == 1)
+					{
+						document.getElementById("mySidenav").style.width = "0";
+						Open = 0;
+					}
+
+					else if (Open == 0)
+					{
+						document.getElementById("mySidenav").style.width = "500px";
+						Open = 1;
+					}
+    				
+				}
+
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+
+</html>

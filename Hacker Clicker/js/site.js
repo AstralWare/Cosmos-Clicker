@@ -26,6 +26,7 @@ function Update()
 	counter.innerText = Bytes + " Bytes";
 	ClickersOwned.innerText = "Generates 1.0/s: " + Clickers + " Owned";
 	ClickerCost.innerText = "Clickers (" + Math.round(10 * 1.15 ** Clickers) + " Bytes)";
+	second.innerText = "Bytes Per Second: " + Clickers;
 
 	if (Bytes >= Math.round(10 * 1.15 ** Clickers))
 	{
